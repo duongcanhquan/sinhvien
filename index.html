@@ -47,7 +47,7 @@
             padding: 40px 30px; 
             text-align: center; 
             width: 100%; 
-            max-width: 850px; 
+            max-width: 900px; /* Tăng nhẹ để chứa đủ 4 nút trên 1 hàng cho thoải mái */
         }
 
         .portal-title {
@@ -86,7 +86,7 @@
             background: rgba(255, 255, 255, 0.9); 
             border: 2px solid rgba(255, 255, 255, 1); 
             border-radius: 20px; 
-            padding: 25px 15px; 
+            padding: 25px 10px; /* Chỉnh lại padding 2 bên để vừa 4 nút trên màn hình */
             text-align: center; 
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
             cursor: pointer; 
@@ -97,7 +97,7 @@
             justify-content: center; 
             align-items: center; 
             box-shadow: 0 8px 16px rgba(0,0,0,0.05); 
-            height: 100%; /* Giúp các nút bằng nhau */
+            height: 100%; 
         }
         
         .role-btn:hover { 
@@ -108,8 +108,8 @@
         }
         
         .role-btn i { 
-            font-size: 2.5rem; 
-            margin-bottom: 15px; 
+            font-size: 2.2rem; /* Giảm nhẹ size icon để cân đối với 4 cột */
+            margin-bottom: 12px; 
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
             -webkit-background-clip: text; 
             -webkit-text-fill-color: transparent; 
@@ -122,13 +122,13 @@
         
         .role-title { 
             font-weight: 800; 
-            font-size: 1.05rem; 
+            font-size: 0.95rem; /* Giảm nhẹ font-size để tránh rớt chữ */
             margin-bottom: 6px; 
             color: #1e293b;
         }
         
         .role-btn small {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             color: #64748b;
             line-height: 1.4;
         }
@@ -141,11 +141,11 @@
                 padding: 15px; 
             }
             .glass-card { 
-                padding: 30px 20px; 
+                padding: 30px 15px; 
                 border-radius: 20px; 
             }
             .portal-title { 
-                font-size: 1.35rem; 
+                font-size: 1.25rem; 
                 margin-bottom: 1rem !important; 
             }
             .glass-card img { 
@@ -164,19 +164,19 @@
             }
             
             .role-btn { 
-                padding: 18px 10px; 
+                padding: 18px 8px; 
                 border-radius: 16px; 
             }
             .role-btn i { 
-                font-size: 2rem; 
+                font-size: 1.8rem; 
                 margin-bottom: 10px; 
             }
             .role-title { 
-                font-size: 0.9rem; 
+                font-size: 0.85rem; 
                 margin-bottom: 4px; 
             }
             .role-btn small { 
-                font-size: 0.75rem; 
+                font-size: 0.7rem; 
             }
         }
     </style>
@@ -187,9 +187,9 @@
         
         <h2 class="portal-title mb-2">CỔNG THÔNG TIN ĐIỆN TỬ SINH VIÊN</h2>
         
-       <div class="row g-3 justify-content-center mb-2">
+        <div class="row g-3 justify-content-center mb-2 mt-4">
             
-            <div class="col-6 col-md-4">
+            <div class="col-6 col-lg-3">
                 <a href="https://lichhoc.vietmycollege.com/" target="_blank" class="role-btn">
                     <i class="fas fa-calendar-alt"></i>
                     <div class="role-title">LỊCH HỌC</div>
@@ -197,29 +197,30 @@
                 </a>
             </div>
            
-            <div class="col-6 col-md-4">
+            <div class="col-6 col-lg-3">
                 <a href="https://script.google.com/macros/s/AKfycbzHKyj9gJIovU6y-fMMcaltmtLUazdw1X-HjinmrN1sQfgmWcbtTMjKWOnddQzTvEHPhg/exec?page=student" class="role-btn">
                     <i class="fas fa-user-graduate"></i>
-                    <div class="role-title"> CỔNG SINH VIÊN</div>
+                    <div class="role-title">CỔNG SINH VIÊN</div>
                     <small>Tra cứu điểm & Khảo sát</small>
                 </a>
             </div>
 
-            <div class="col-6 col-md-4">
-                <a href="https://khaothi.vietmycollege.com/lichthi/ class="role-btn">
-                    <i class="fas fa-file-signature"></i>
+            <div class="col-6 col-lg-3">
+                <a href="https://khaothi.vietmycollege.com/lichthi/" class="role-btn">
+                    <i class="fas fa-calendar-check"></i>
                     <div class="role-title">LỊCH THI</div>
                     <small>Tra cứu lịch thi</small>
                 </a>
             </div>
-           
- <div class="col-6 col-md-4">
+            
+            <div class="col-6 col-lg-3">
                 <a href="https://khaothi.vietmycollege.com/phuckhao/" class="role-btn">
                     <i class="fas fa-file-signature"></i>
                     <div class="role-title">PHÚC KHẢO</div>
                     <small>Đăng ký phúc khảo bài thi</small>
                 </a>
             </div>
+            
         </div>
     </div>
 </body>
